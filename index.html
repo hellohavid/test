@@ -1,93 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <title>MUHA COPY AND STATIONERY | Muharitani Zanzibar</title>
 
-    <title>Smart Community Reporting</title>
+    <meta name="description"
+          content="MUHA COPY AND STATIONERY in Muharitani, Zanzibar. Printers, photocopy machines, computers, stationery, office equipment and technical services.">
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
           rel="stylesheet">
 
     <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css"
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
           rel="stylesheet">
 
-    <!-- Your CSS -->
+    <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
-
 </head>
-
 
 <body>
 
 
-<!-- ================= NAVBAR ================= -->
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
 
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<nav class="navbar navbar-expand-lg main-navbar fixed-top">
 
     <div class="container">
 
-        <a class="navbar-brand" href="#home">
-            <i class="bi bi-buildings"></i>
-            Smart Community
+        <a class="navbar-brand d-flex align-items-center gap-2"
+           href="index.html">
+
+            <span class="brand-icon">
+                <i class="bi bi-shop"></i>
+            </span>
+
+            <span>MUHA COPY</span>
+
         </a>
 
 
         <button class="navbar-toggler"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#mainNavbar">
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
 
-            <span class="navbar-toggler-icon"></span>
+            <i class="bi bi-list"></i>
 
         </button>
 
 
-        <div class="collapse navbar-collapse" id="mainNavbar">
+        <div class="collapse navbar-collapse"
+             id="mainNavbar">
 
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#home">
+                    <a class="nav-link active"
+                       href="index.html">
                         Home
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">
+                    <a class="nav-link"
+                       href="services.html">
+                        Services
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="products.html">
+                        Products
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="about.html">
                         About
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#issues">
-                        Issues
+                    <a class="nav-link"
+                       href="gallery.html">
+                        Gallery
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#how">
-                        How It Works
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#report">
-                        Report
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link btn-nav"
-                       href="#contact">
+                    <a class="nav-link"
+                       href="contact.html">
                         Contact
                     </a>
+                </li>
+
+                <li class="nav-item ms-lg-2">
+
+                    <a href="quote.html"
+                       class="btn navbar-btn">
+
+                        Get a Quote
+
+                    </a>
+
                 </li>
 
             </ul>
@@ -100,62 +129,204 @@
 
 
 
-<!-- ================= HOME ================= -->
+<!-- =====================================================
+     HERO
+===================================================== -->
 
-<section id="home" class="hero-section">
+<section class="home-hero">
 
     <div class="container">
 
-        <div class="row align-items-center">
+        <div class="row align-items-center min-vh-100">
 
-            <div class="col-lg-6">
+            <!-- HERO TEXT -->
 
-                <span class="hero-label">
-                    SMART COMMUNITY PLATFORM
+            <div class="col-lg-7">
+
+                <span class="section-badge home-badge">
+
+                    <i class="bi bi-shop"></i>
+
+                    MUHA COPY AND STATIONERY
+
                 </span>
 
-                <h1>
-                    Make Your
-                    <span>Community</span>
-                    Better
+
+                <h1 class="home-title">
+
+                    Everything You Need,
+
+                    <span>
+                        All in One Place.
+                    </span>
+
                 </h1>
 
-                <p>
-                    Report community problems quickly,
-                    track reported issues and help create
-                    a safer, cleaner and better community.
+
+                <p class="home-description">
+
+                    Your trusted destination in Muharitani, Zanzibar
+                    for printers, photocopy machines, computers,
+                    stationery, school equipment, office supplies
+                    and professional technical services.
+
                 </p>
 
 
-                <div class="hero-buttons">
+                <div class="home-buttons">
 
-                    <a href="#report"
-                       class="btn btn-primary-custom">
+                    <a href="products.html"
+                       class="btn home-primary-btn">
 
-                        <i class="bi bi-megaphone"></i>
-                        Report an Issue
+                        <i class="bi bi-grid"></i>
+
+                        Explore Products
+
+                    </a>
+
+
+                    <a href="quote.html"
+                       class="btn home-secondary-btn">
+
+                        <i class="bi bi-chat-square-text"></i>
+
+                        Request a Quote
 
                     </a>
 
+                </div>
 
-                    <a href="#about"
-                       class="btn btn-outline-custom">
 
-                        Learn More
+                <!-- TRUST ITEMS -->
 
-                    </a>
+                <div class="home-trust">
+
+                    <div class="trust-item">
+
+                        <i class="bi bi-check-circle-fill"></i>
+
+                        <span>
+                            Quality Products
+                        </span>
+
+                    </div>
+
+
+                    <div class="trust-item">
+
+                        <i class="bi bi-check-circle-fill"></i>
+
+                        <span>
+                            Technical Support
+                        </span>
+
+                    </div>
+
+
+                    <div class="trust-item">
+
+                        <i class="bi bi-check-circle-fill"></i>
+
+                        <span>
+                            Open 24 Hours
+                        </span>
+
+                    </div>
 
                 </div>
 
             </div>
 
 
-            <div class="col-lg-6">
+            <!-- HERO VISUAL -->
 
-                <div class="hero-image">
+            <div class="col-lg-5 mt-5 mt-lg-0">
 
-                    <img src="images/community.jpg"
-                         alt="Community members working together">
+                <div class="home-visual">
+
+                    <div class="home-visual-circle"></div>
+
+
+                    <div class="home-main-card">
+
+                        <div class="home-main-icon">
+
+                            <i class="bi bi-printer"></i>
+
+                        </div>
+
+
+                        <h4>
+                            Printing & Office Solutions
+                        </h4>
+
+
+                        <p>
+                            Reliable equipment and supplies
+                            for schools, offices and businesses.
+                        </p>
+
+
+                        <a href="services.html"
+                           class="home-visual-link">
+
+                            View Services
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- FLOATING CARD 1 -->
+
+                    <div class="home-floating-card floating-one">
+
+                        <div class="floating-icon">
+
+                            <i class="bi bi-pc-display"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Technology
+                            </strong>
+
+                            <small>
+                                Computers & Accessories
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FLOATING CARD 2 -->
+
+                    <div class="home-floating-card floating-two">
+
+                        <div class="floating-icon">
+
+                            <i class="bi bi-pencil"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Stationery
+                            </strong>
+
+                            <small>
+                                School & Office Supplies
+                            </small>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -169,59 +340,156 @@
 
 
 
-<!-- ================= STATS ================= -->
+<!-- =====================================================
+     QUICK SERVICES
+===================================================== -->
 
-<section class="stats-section">
+<section class="home-services section-padding">
 
     <div class="container">
 
+        <div class="text-center mb-5">
+
+            <span class="section-label">
+                WHAT WE OFFER
+            </span>
+
+            <h2 class="section-title">
+                Everything For Your Everyday Needs
+            </h2>
+
+            <p class="section-text mx-auto">
+
+                From essential stationery to professional
+                office equipment, we provide practical
+                solutions under one roof.
+
+            </p>
+
+        </div>
+
+
         <div class="row g-4">
 
-            <div class="col-md-4">
 
-                <div class="stat-card">
+            <!-- CARD 1 -->
 
-                    <div class="stat-icon">
-                        <i class="bi bi-people"></i>
+            <div class="col-md-6 col-lg-3">
+
+                <div class="home-service-card">
+
+                    <div class="home-service-icon">
+
+                        <i class="bi bi-printer"></i>
+
                     </div>
 
-                    <h3>1,250+</h3>
+                    <h5>
+                        Printers
+                    </h5>
 
-                    <p>Community Members</p>
+                    <p>
+                        Quality printers for homes,
+                        schools and offices.
+                    </p>
+
+                    <a href="products.html">
+                        View Products
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
 
                 </div>
 
             </div>
 
 
-            <div class="col-md-4">
+            <!-- CARD 2 -->
 
-                <div class="stat-card">
+            <div class="col-md-6 col-lg-3">
 
-                    <div class="stat-icon">
-                        <i class="bi bi-file-earmark-text"></i>
+                <div class="home-service-card">
+
+                    <div class="home-service-icon">
+
+                        <i class="bi bi-copy"></i>
+
                     </div>
 
-                    <h3>850+</h3>
+                    <h5>
+                        Photocopy Machines
+                    </h5>
 
-                    <p>Issues Reported</p>
+                    <p>
+                        Reliable machines for
+                        professional document work.
+                    </p>
+
+                    <a href="products.html">
+                        View Products
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
 
                 </div>
 
             </div>
 
 
-            <div class="col-md-4">
+            <!-- CARD 3 -->
 
-                <div class="stat-card">
+            <div class="col-md-6 col-lg-3">
 
-                    <div class="stat-icon">
-                        <i class="bi bi-check-circle"></i>
+                <div class="home-service-card">
+
+                    <div class="home-service-icon">
+
+                        <i class="bi bi-pc-display"></i>
+
                     </div>
 
-                    <h3>720+</h3>
+                    <h5>
+                        Computers
+                    </h5>
 
-                    <p>Issues Resolved</p>
+                    <p>
+                        Computers and accessories
+                        for work and study.
+                    </p>
+
+                    <a href="products.html">
+                        View Products
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 4 -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="home-service-card">
+
+                    <div class="home-service-icon">
+
+                        <i class="bi bi-tools"></i>
+
+                    </div>
+
+                    <h5>
+                        Technician Services
+                    </h5>
+
+                    <p>
+                        Professional technical
+                        assistance and support.
+                    </p>
+
+                    <a href="services.html">
+                        Our Services
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
 
                 </div>
 
@@ -235,51 +503,467 @@
 
 
 
-<!-- ================= ABOUT ================= -->
+<!-- =====================================================
+     CATEGORIES
+===================================================== -->
 
-<section id="about" class="section-padding">
+<section class="home-categories section-padding">
+
+    <div class="container">
+
+        <div class="row align-items-end mb-5">
+
+            <div class="col-lg-8">
+
+                <span class="section-label">
+                    OUR CATEGORIES
+                </span>
+
+                <h2 class="section-title mb-3">
+                    Products For School,
+                    Office & Business
+                </h2>
+
+                <p class="section-text">
+                    We provide a wide range of products designed
+                    to support students, professionals, offices
+                    and businesses.
+                </p>
+
+            </div>
+
+
+            <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+
+                <a href="products.html"
+                   class="btn outline-green-btn">
+
+                    View All Products
+
+                    <i class="bi bi-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <!-- STATIONERY -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="category-card">
+
+                    <div class="category-icon">
+
+                        <i class="bi bi-pencil-square"></i>
+
+                    </div>
+
+                    <h4>
+                        Stationery
+                    </h4>
+
+                    <p>
+                        Pens, notebooks, pencils,
+                        staplers and everyday stationery.
+                    </p>
+
+                    <a href="products.html">
+                        Explore
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- OFFICE -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="category-card">
+
+                    <div class="category-icon">
+
+                        <i class="bi bi-briefcase"></i>
+
+                    </div>
+
+                    <h4>
+                        Office Equipment
+                    </h4>
+
+                    <p>
+                        Files, folders, paper,
+                        calculators and office supplies.
+                    </p>
+
+                    <a href="products.html">
+                        Explore
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- TECHNOLOGY -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="category-card">
+
+                    <div class="category-icon">
+
+                        <i class="bi bi-cpu"></i>
+
+                    </div>
+
+                    <h4>
+                        Technology
+                    </h4>
+
+                    <p>
+                        Computers, accessories,
+                        printers and related equipment.
+                    </p>
+
+                    <a href="products.html">
+                        Explore
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- SCHOOL -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="category-card">
+
+                    <div class="category-icon">
+
+                        <i class="bi bi-backpack"></i>
+
+                    </div>
+
+                    <h4>
+                        School Equipment
+                    </h4>
+
+                    <p>
+                        Essential supplies for students,
+                        teachers and schools.
+                    </p>
+
+                    <a href="products.html">
+                        Explore
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRINTING -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="category-card">
+
+                    <div class="category-icon">
+
+                        <i class="bi bi-printer-fill"></i>
+
+                    </div>
+
+                    <h4>
+                        Printing Supplies
+                    </h4>
+
+                    <p>
+                        Printing paper, ink,
+                        toner and related supplies.
+                    </p>
+
+                    <a href="products.html">
+                        Explore
+                        <i class="bi bi-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- TECHNICAL -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="category-card">
+
+                    <div class="category-icon">
+
+                        <i class="bi bi-wrench-adjustable"></i>
+
+                    </div>
+
+                    <h4>
+                        Technical Services
+                    </h4>
+
+                    <p>
+                        Installation, maintenance and
+                        professional technical assistance.
+                    </p>
+
+                    <a href="services.html">
+
+                        Explore
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     WHY CHOOSE US
+===================================================== -->
+
+<section class="home-why section-padding">
 
     <div class="container">
 
         <div class="row align-items-center g-5">
 
-            <div class="col-lg-6">
-
-                <img src="images/clean-community.jpg"
-                     alt="Clean community"
-                     class="about-image">
-
-            </div>
-
 
             <div class="col-lg-6">
 
                 <span class="section-label">
-                    ABOUT THE PLATFORM
+                    WHY MUHA?
+                </span>
+
+                <h2 class="section-title">
+                    A Trusted Partner
+                    For Your Everyday Needs
+                </h2>
+
+                <p class="section-text">
+
+                    At MUHA COPY AND STATIONERY, we focus on
+                    providing quality products, reliable services
+                    and convenient support for our customers.
+
+                </p>
+
+
+                <div class="why-list">
+
+
+                    <div class="why-list-item">
+
+                        <div class="why-list-icon">
+
+                            <i class="bi bi-patch-check"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h6>
+                                Quality Products
+                            </h6>
+
+                            <p>
+                                Carefully selected products
+                                for reliable everyday use.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="why-list-item">
+
+                        <div class="why-list-icon">
+
+                            <i class="bi bi-headset"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h6>
+                                Technical Support
+                            </h6>
+
+                            <p>
+                                Professional assistance for
+                                your equipment and technology.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="why-list-item">
+
+                        <div class="why-list-icon">
+
+                            <i class="bi bi-clock-history"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h6>
+                                Open 24 Hours
+                            </h6>
+
+                            <p>
+                                Available whenever you need
+                                our products and services.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <!-- VISUAL -->
+
+            <div class="col-lg-6">
+
+                <div class="home-about-visual">
+
+                    <div class="about-visual-content">
+
+                        <div class="about-big-icon">
+
+                            <i class="bi bi-shop-window"></i>
+
+                        </div>
+
+                        <h3>
+                            MUHA COPY
+                            <br>
+                            AND STATIONERY
+                        </h3>
+
+                        <p>
+                            Muharitani - Zanzibar
+                        </p>
+
+                    </div>
+
+
+                    <div class="about-mini-card">
+
+                        <i class="bi bi-check-circle-fill"></i>
+
+                        <div>
+
+                            <strong>
+                                Customer Focused
+                            </strong>
+
+                            <small>
+                                Quality & reliable service
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     BUSINESS CTA
+===================================================== -->
+
+<section class="home-business-cta">
+
+    <div class="container">
+
+        <div class="home-business-box">
+
+            <div>
+
+                <span class="section-label">
+                    FOR BUSINESSES & ORGANIZATIONS
                 </span>
 
                 <h2>
-                    Together We Can Build
-                    <span>Better Communities</span>
+                    Need Supplies in Bulk?
                 </h2>
 
                 <p>
-                    Smart Community Reporting is a platform
-                    that allows citizens to report problems
-                    affecting their communities.
+                    We can help with school, office and
+                    business supply requirements.
                 </p>
 
-                <p>
-                    Citizens can report damaged roads,
-                    waste problems, broken street lights
-                    and other community issues.
-                </p>
+            </div>
 
 
-                <a href="#report"
-                   class="btn btn-primary-custom">
+            <div class="home-business-buttons">
 
-                    Report a Problem
+                <a href="quote.html"
+                   class="btn btn-light">
+
+                    <i class="bi bi-file-earmark-text"></i>
+
+                    Request a Quote
+
+                </a>
+
+
+                <a href="https://wa.me/255777465106"
+                   target="_blank"
+                   class="btn btn-outline-light">
+
+                    <i class="bi bi-whatsapp"></i>
+
+                    WhatsApp Us
 
                 </a>
 
@@ -293,599 +977,235 @@
 
 
 
-<!-- ================= ISSUES ================= -->
+<!-- =====================================================
+     FINAL CTA
+===================================================== -->
 
-<section id="issues"
-         class="section-padding bg-light">
-
-    <div class="container">
-
-        <div class="text-center section-heading">
-
-            <span class="section-label">
-                COMMUNITY ISSUES
-            </span>
-
-            <h2>
-                Report Problems That
-                <span>Matter</span>
-            </h2>
-
-            <p>
-                Help identify and report problems affecting
-                your community.
-            </p>
-
-        </div>
-
-
-        <div class="row g-4 mt-4">
-
-
-            <!-- ROAD -->
-
-            <div class="col-md-4">
-
-                <div class="issue-card">
-
-                    <img src="images/road.jpg"
-                         alt="Damaged road">
-
-                    <div class="issue-content">
-
-                        <div class="issue-icon">
-                            <i class="bi bi-signpost-2"></i>
-                        </div>
-
-                        <h4>
-                            Road Problems
-                        </h4>
-
-                        <p>
-                            Report potholes, damaged roads,
-                            blocked roads and other road issues.
-                        </p>
-
-                        <a href="#report">
-                            Report Issue
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- WASTE -->
-
-            <div class="col-md-4">
-
-                <div class="issue-card">
-
-                    <img src="images/waste.jpg"
-                         alt="Waste management">
-
-                    <div class="issue-content">
-
-                        <div class="issue-icon">
-                            <i class="bi bi-trash3"></i>
-                        </div>
-
-                        <h4>
-                            Waste Management
-                        </h4>
-
-                        <p>
-                            Report garbage, illegal dumping
-                            and waste collection problems.
-                        </p>
-
-                        <a href="#report">
-                            Report Issue
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- STREET LIGHT -->
-
-            <div class="col-md-4">
-
-                <div class="issue-card">
-
-                    <img src="images/street-light.jpg"
-                         alt="Street light">
-
-                    <div class="issue-content">
-
-                        <div class="issue-icon">
-                            <i class="bi bi-lightbulb"></i>
-                        </div>
-
-                        <h4>
-                            Street Lights
-                        </h4>
-
-                        <p>
-                            Report broken street lights
-                            and public lighting problems.
-                        </p>
-
-                        <a href="#report">
-                            Report Issue
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ================= HOW IT WORKS ================= -->
-
-<section id="how" class="section-padding">
+<section class="home-final-cta section-padding">
 
     <div class="container">
-
-        <div class="text-center section-heading">
-
-            <span class="section-label">
-                HOW IT WORKS
-            </span>
-
-            <h2>
-                Report In
-                <span>3 Simple Steps</span>
-            </h2>
-
-        </div>
-
-
-        <div class="row g-4 mt-4">
-
-
-            <div class="col-md-4">
-
-                <div class="step-card">
-
-                    <div class="step-number">
-                        01
-                    </div>
-
-                    <i class="bi bi-person-plus"></i>
-
-                    <h4>
-                        Create Account
-                    </h4>
-
-                    <p>
-                        Create your account and become
-                        part of your community.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="col-md-4">
-
-                <div class="step-card">
-
-                    <div class="step-number">
-                        02
-                    </div>
-
-                    <i class="bi bi-file-earmark-plus"></i>
-
-                    <h4>
-                        Report Problem
-                    </h4>
-
-                    <p>
-                        Select the problem, describe it
-                        and provide its location.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="col-md-4">
-
-                <div class="step-card">
-
-                    <div class="step-number">
-                        03
-                    </div>
-
-                    <i class="bi bi-check-circle"></i>
-
-                    <h4>
-                        Track Progress
-                    </h4>
-
-                    <p>
-                        Follow your report and check
-                        whether the problem has been resolved.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ================= REPORT ================= -->
-
-<section id="report"
-         class="section-padding bg-light">
-
-    <div class="container">
-
-        <div class="row justify-content-center">
-
-            <div class="col-lg-8">
-
-                <div class="report-box">
-
-                    <div class="text-center mb-4">
-
-                        <span class="section-label">
-                            REPORT AN ISSUE
-                        </span>
-
-                        <h2>
-                            Tell Us About The
-                            <span>Problem</span>
-                        </h2>
-
-                        <p>
-                            Help us understand what is happening
-                            in your community.
-                        </p>
-
-                    </div>
-
-
-                    <form id="reportForm">
-
-
-                        <div class="mb-3">
-
-                            <label class="form-label">
-                                Your Name
-                            </label>
-
-                            <input type="text"
-                                   class="form-control"
-                                   id="reportName"
-                                   placeholder="Enter your name"
-                                   required>
-
-                        </div>
-
-
-                        <div class="mb-3">
-
-                            <label class="form-label">
-                                Issue Category
-                            </label>
-
-                            <select class="form-select"
-                                    id="reportCategory"
-                                    required>
-
-                                <option value="">
-                                    Select category
-                                </option>
-
-                                <option value="Road Problems">
-                                    Road Problems
-                                </option>
-
-                                <option value="Waste Management">
-                                    Waste Management
-                                </option>
-
-                                <option value="Street Lights">
-                                    Street Lights
-                                </option>
-
-                                <option value="Other">
-                                    Other
-                                </option>
-
-                            </select>
-
-                        </div>
-
-
-                        <div class="mb-3">
-
-                            <label class="form-label">
-                                Location
-                            </label>
-
-                            <input type="text"
-                                   class="form-control"
-                                   id="reportLocation"
-                                   placeholder="Enter location"
-                                   required>
-
-                        </div>
-
-
-                        <div class="mb-3">
-
-                            <label class="form-label">
-                                Describe The Problem
-                            </label>
-
-                            <textarea class="form-control"
-                                      id="reportDescription"
-                                      rows="5"
-                                      placeholder="Describe the problem..."
-                                      required></textarea>
-
-                        </div>
-
-
-                        <div class="mb-4">
-
-                            <label class="form-label">
-                                Upload Image
-                            </label>
-
-                            <input type="file"
-                                   class="form-control"
-                                   accept="image/*">
-
-                        </div>
-
-
-                        <button type="submit"
-                                class="btn btn-primary-custom w-100">
-
-                            <i class="bi bi-send"></i>
-                            Submit Report
-
-                        </button>
-
-
-                    </form>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ================= CTA ================= -->
-
-<section class="cta-section">
-
-    <div class="container text-center">
-
-        <i class="bi bi-megaphone cta-icon"></i>
-
-        <h2>
-            Your Voice Can Make a Difference
-        </h2>
-
-        <p>
-            See a problem in your community?
-            Report it today.
-        </p>
-
-        <a href="#report"
-           class="btn btn-light btn-lg">
-
-            <i class="bi bi-send"></i>
-            Report an Issue
-
-        </a>
-
-    </div>
-
-</section>
-
-
-
-<!-- ================= CONTACT ================= -->
-
-<section id="contact"
-         class="section-padding">
-
-    <div class="container">
-
-        <div class="text-center section-heading">
-
-            <span class="section-label">
-                CONTACT US
-            </span>
-
-            <h2>
-                Get In
-                <span>Touch</span>
-            </h2>
-
-            <p>
-                Have questions or need help?
-                Contact our community support team.
-            </p>
-
-        </div>
-
-
-        <div class="row g-4 mt-4">
-
-
-            <div class="col-md-4">
-
-                <div class="contact-card">
-
-                    <i class="bi bi-envelope"></i>
-
-                    <h4>
-                        Email
-                    </h4>
-
-                    <p>
-                        support@smartcommunity.com
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="col-md-4">
-
-                <div class="contact-card">
-
-                    <i class="bi bi-telephone"></i>
-
-                    <h4>
-                        Phone
-                    </h4>
-
-                    <p>
-                        +255 700 000 000
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="col-md-4">
-
-                <div class="contact-card">
-
-                    <i class="bi bi-geo-alt"></i>
-
-                    <h4>
-                        Location
-                    </h4>
-
-                    <p>
-                        Tanzania
-                    </p>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ================= FOOTER ================= -->
-
-<footer class="footer">
-
-    <div class="container">
-
-        <div class="row">
-
-
-            <div class="col-md-6">
-
-                <h4>
-                    <i class="bi bi-buildings"></i>
-                    Smart Community
-                </h4>
-
-                <p>
-                    Smart Community Reporting helps citizens
-                    report problems and improve their communities.
-                </p>
-
-            </div>
-
-
-            <div class="col-md-6">
-
-                <h5>
-                    Quick Links
-                </h5>
-
-                <div class="footer-links">
-
-                    <a href="#home">
-                        Home
-                    </a>
-
-                    <a href="#about">
-                        About
-                    </a>
-
-                    <a href="#issues">
-                        Issues
-                    </a>
-
-                    <a href="#report">
-                        Report
-                    </a>
-
-                    <a href="#contact">
-                        Contact
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <hr>
-
 
         <div class="text-center">
 
-            <p class="mb-0">
-                © 2026 Smart Community Reporting.
+            <span class="section-badge">
+
+                <i class="bi bi-chat-dots"></i>
+
+                LET'S WORK TOGETHER
+
+            </span>
+
+
+            <h2 class="section-title mt-4">
+
+                Have Something
+                <span class="home-title-green">
+                    In Mind?
+
+                </span>
+
+            </h2>
+
+
+            <p class="section-text mx-auto">
+
+                Tell us what you need and our team will
+                help you find the right product or service.
+
+            </p>
+
+
+            <div class="home-final-buttons">
+
+                <a href="contact.html"
+                   class="btn home-primary-btn">
+
+                    <i class="bi bi-telephone"></i>
+
+                    Contact Us
+
+                </a>
+
+
+                <a href="quote.html"
+                   class="btn outline-green-btn">
+
+                    <i class="bi bi-send"></i>
+
+                    Get a Quote
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="main-footer">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+
+            <!-- BRAND -->
+
+            <div class="col-lg-5">
+
+                <div class="footer-brand">
+
+                    <div class="d-flex align-items-center gap-2 mb-3">
+
+                        <span class="brand-icon">
+
+                            <i class="bi bi-shop"></i>
+
+                        </span>
+
+                        <h5 class="mb-0">
+                            MUHA COPY AND STATIONERY
+                        </h5>
+
+                    </div>
+
+
+                    <p class="footer-description">
+
+                        Your trusted source for stationery,
+                        office equipment, computers, printers,
+                        photocopy machines and technical services.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- LINKS -->
+
+            <div class="col-6 col-lg-3">
+
+                <h6>
+                    Quick Links
+                </h6>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="products.html">
+                            Products
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">
+                            Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="gallery.html">
+                            Gallery
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="col-6 col-lg-4">
+
+                <h6>
+                    Contact Us
+                </h6>
+
+
+                <div class="footer-contact">
+
+                    <p>
+
+                        <i class="bi bi-geo-alt"></i>
+
+                        Muharitani, Zanzibar
+
+                    </p>
+
+
+                    <p>
+
+                        <i class="bi bi-telephone"></i>
+
+                        0777 465 106
+
+                    </p>
+
+
+                    <p>
+
+                        <i class="bi bi-envelope"></i>
+
+                        issambaini3@gmail.com
+
+                    </p>
+
+
+                    <p>
+
+                        <i class="bi bi-clock"></i>
+
+                        Open 24 Hours
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © <span class="current-year">
+                    2026
+                </span>
+
+                MUHA COPY AND STATIONERY.
                 All Rights Reserved.
+
             </p>
 
         </div>
@@ -896,17 +1216,30 @@
 
 
 
+<!-- =====================================================
+     WHATSAPP
+===================================================== -->
+
+<a href="https://wa.me/255777465106"
+   class="whatsapp-float"
+   target="_blank"
+   aria-label="Chat with MUHA COPY AND STATIONERY on WhatsApp">
+
+    <i class="bi bi-whatsapp"></i>
+
+</a>
+
+
+
 <!-- Bootstrap JS -->
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
-</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 
-<!-- Your JS -->
+<!-- Main JS -->
 
 <script src="js/script.js"></script>
 
 
 </body>
-
 </html>
